@@ -1,6 +1,6 @@
 //Words to pick from
 var words = ["DEMOGORGON", "EXPERIMENT", "PORTAL", "LABORATORY", "GATE", "TELEKINESIS", 
-"TELEPATHY", "POLLYWOG"];
+"TELEPATHY", "POLLYWOG", "ELEVEN"];
 var alphabet = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase();
 var wins = 0;
 var losses = 0;
