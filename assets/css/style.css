@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Benguiat Bold";
+    src: url("/fonts/benguiatstd-bold.eot");
+    src: 
+    url("fonts/benguiatstd-bold.woff") format("woff"),
+    url("fonts/benguiatstd-bold.ttf") format("ttf"),
+    url("fonts/benguiatstd-bold.otf") format("opentype"),
+    url("fonts/benguiatstd-bold.svg#filename") format("svg");
+    }
+body{
+    background-image: url(../images/bg-st2.jpg);
+    background-position:50% 50%;  /* Sets reference point to scale from */
+    background-size:cover;
+    font-family: "Benguiat Bold" !important;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 56%;
+}
+h1{
+    color: white;
+    font-size: 26px;
+    
+}
+#gameOverMessage{
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle; 
+}
+span{
+    color: grey;
+    font-size: 35px;
+    margin: 7px;
+    line-height: 0px;
+}
+#word{
+    font-size: 75px;
+    color: red;
+    letter-spacing: 15px;
+    text-align: center;
+    vertical-align: middle; 
+}
+.lights{
+    text-align: center;
+    vertical-align: middle; 
+}
+.lights img{
+    width: 481px;
+}
+#title{
+    margin-top:-7px
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Let's Play Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <img src="assets/images/STRANGER-WORDS2.png" class="center" />
+        </div>
+        <div id="gameOverMessage"></div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="scoreInfo">
+                            <h1>WINS:
+                                <span id="numWins">0</span>
+                            </h1>
+                            <h1>LOSSES:
+                                <span id="numLosses">0</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 id="word"></h1>
+                    </div>
+                    <div class="col-md-2">
+                        <h1>GUESSES LEFT:
+                            <span id="guessesLeft">0</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lights">
+            <div class="col-md-12">
+                <div class="gameInfo">
+                    <img src="assets/images/lightbulbs.jpg" />
+                    <div id="row1"></div>
+                    <img src="assets/images/lightbulbs-small.jpg" />
+                    <div id="row2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/javascript/game.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+
+</html>
