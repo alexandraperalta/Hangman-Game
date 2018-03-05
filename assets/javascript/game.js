@@ -37,15 +37,16 @@ function init() {
     for (var i = 0; i < chosen.length; i++) {
         dashes.push("-");
     }
-    $('.letter-button').on('click', function (event) {
-        checkKeyInWord(event.target.id);
+    $('.letter-button').off("click");//needed this because the onclick was firing multiple times as the games were increasing
+    $('.letter-button').on('click', function () {
+        checkKeyInWord(this.id);
+        console.log(this);
     });
     
     $(".letter-button").css('color', 'grey');
     document.getElementById("gameOverMessage").innerText = "";
     document.getElementById("guessesLeft").innerText = guessesLeft;//populate guessesLeft
     document.getElementById("word").innerText = dashes.join("");//populate dashes
-    document.getElementsByClassName("lettersGuessed").innerText = guessedLetters.join("");
     // register user's keys
     document.onkeyup = function (event) {
         //the letter chosen is correct
