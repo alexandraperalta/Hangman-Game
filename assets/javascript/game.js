@@ -6,6 +6,7 @@ var wins = 0;
 var losses = 0;
 var loseMessage = "Oh no, you got lost in the upside down!\n";
 var winMessage = "Congratulations, you closed the gate!\n";
+var game; //game is active/inactive
 
 //create clickable letters
 var main = $("body");
@@ -29,15 +30,17 @@ for (var i = 14; i < alphabet.length; i++) {
 init();
 
 function init() {
+    var music = document.getElementById("music"); 
+    music.play();
     var guessesLeft = 6;
-    var game = true; //game is active
+    game = true;
     var guessedLetters = [];
     var chosen = words[Math.floor(Math.random() * words.length)]; //random word from array
     var dashes = []; //dashes 
     for (var i = 0; i < chosen.length; i++) {
         dashes.push("-");
     }
-    $('.letter-button').off("click");//needed this because the onclick was firing multiple times as the games were increasing
+    $('.letter-button').off("click");//needed this because the onclick was firing multiple times as the games were increasing++++++
     $('.letter-button').on('click', function () {
         checkKeyInWord(this.id);
         console.log(this);
@@ -60,7 +63,7 @@ function init() {
         var indexOfKey = chosen.indexOf(key);
         var letterSpan = $('#' + key);
         //if letter hasn't been guessed yet
-        if (guessedLetters.indexOf(key) === -1) {
+        if (guessedLetters.indexOf(key) === -1 && game === true) {
             if (indexOfKey != -1) {
                 letterSpan.css('color', 'Chartreuse');
                 //loop through word to find all instances of the letter

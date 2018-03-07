@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "Benguiat Bold";
-    src: url("/fonts/benguiatstd-bold.eot");
-    src: 
-    url("fonts/benguiatstd-bold.woff") format("woff"),
-    url("fonts/benguiatstd-bold.ttf") format("ttf"),
-    url("fonts/benguiatstd-bold.otf") format("opentype"),
-    url("fonts/benguiatstd-bold.svg#filename") format("svg");
+        font-family: "Benguiat Bold";
+        src: url("/fonts/benguiatstd-bold.eot");
+        src: 
+        url("fonts/benguiatstd-bold.woff") format("woff"),
+        url("fonts/benguiatstd-bold.ttf") format("ttf"),
+        url("fonts/benguiatstd-bold.otf") format("opentype"),
+        url("fonts/benguiatstd-bold.svg#filename") format("svg");
     }
 body{
     background-image: url(../images/bg-st2.jpg);
@@ -36,6 +36,12 @@ span{
     margin: 9px;
     line-height: 0px;
 }
+.gameInfo span {
+    font-family: 'Shadows Into Light', cursive;
+    padding: 8px;
+    margin: 3px;
+    /* padding-top: 38px; */
+}
 #word{
     font-size: 75px;
     color: red;
@@ -48,7 +54,7 @@ span{
     vertical-align: middle; 
 }
 .lights img{
-    width: 481px;
+    width: 552px;
 }
 #title{
     margin-top:-7px
