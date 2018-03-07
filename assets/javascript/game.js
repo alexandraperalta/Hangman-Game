@@ -31,6 +31,7 @@ init();
 
 function init() {
     var music = document.getElementById("music"); 
+    music.volume = 0.1;    
     music.play();
     var guessesLeft = 6;
     game = true;
