@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Stranger Words</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" /><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -17,10 +18,14 @@
         <div id="title">
             <img src="assets/images/STRANGER-WORDS2.png" class="center" />
         </div>
-        <div id="gameOverMessage"></div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div id="gameOverMessage"></div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
-
                 <div class="row">
                     <div class="col-md-2">
                         <div class="scoreInfo">
@@ -39,6 +44,7 @@
                         <h1>GUESSES LEFT:
                             <span id="guessesLeft">0</span>
                         </h1>
+                        <button class="btn-warning" onclick="document.getElementById('music').muted=!document.getElementById('music').muted">Mute/ Unmute</button>
                     </div>
                 </div>
             </div>
@@ -47,17 +53,25 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="gameInfo">
-                    <img src="assets/images/lightbulbs.jpg" />
-                    <div id="row1"></div>
-                    <img src="assets/images/lightbulbs-small.jpg" />
-                    <div id="row2"></div>
+                    <row>
+                        <div class="col-md-12">
+                            <img src="assets/images/lightbulbs.jpg" />
+                            <div id="row1"></div>
+                        </div>
+                    </row>
+                    <row>
+                        <div class="col-md-12">
+                            <img src="assets/images/lightbulbs-small.jpg" />
+                            <div id="row2"></div>
+                        </div>
+                    </row>
                 </div>
             </div>
             <div class="col-md-2"></div>
         </div>
     </div>
 </body>
-<audio controls id="music">
+<audio id="music">
     <source src="assets/sound/titleSequence.mp3" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
 
